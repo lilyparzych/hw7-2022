@@ -49,18 +49,18 @@ document.querySelector("#mute").addEventListener("click", function(){
 	if(video.muted == true) {
 		video.muted = false;
 		console.log("volume unmuted set to " + video.volume);
-		mute.textContent = "Mute"}
+		this.innerHTML = "Mute"}
 	else {
 		video.muted = true;
 		console.log("volume muted");
-		mute.textContext = "Unmute";
+		this.innerHTML = "Unmute";
 	}
 	
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	video.classList.add("#oldSchool");
-	console.log("original sytling");
+	video.classList.add("oldSchool");
+	console.log("old school sytling");
 });
 
 document.querySelector("#orig").addEventListener("click", function(){
